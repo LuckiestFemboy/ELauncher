@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ELauncher</title>
+        <link rel="icon" href="media/favicon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <header>
+            <p class="MC-Java-Header">Minecraft: Java Edition</p>
+            <div class="header-buttons">
+                <p class="Page-Button Page-Selected">Play</p>
+                <p class="Page-Button">Servers</p>
+                <a href="https://github.com/EvanRunnerGames/ELauncher" target="_blank" class="Page-Button">Github Repo</a>
+            </div>
+        </header>
+
+        <div class="Background-Container">
+            <div class="MC-Java-Container">
+                <img class="MC-Java-BG" src="media/java_edition.png" draggable="false">
+            </div>
+            
+        </div>
+
+        <div class="Version-Control">
+            <select id="version-selection" name="version-selection" class="versions">
+              <option value="1.12.2" class="version-option">1.12.2</option>
+              <option value="1.12.2 (WASM-GC)" class="version-option">1.12.2 (WASM-GC)</option>
+              <option value="1.8.8 Kono_Client" class="version-option">1.8.8 Kono Client</option>
+              <option value="1.8.8" class="version-option">1.8.8</option>
+              <option value="1.8.8 (WASM-GC)" class="version-option">1.8.8 (WASM-GC)</option>
+              <option value="1.5.2" class="version-option">1.5.2</option>
+              <option value="Beta 1.7.3" class="version-option">Beta 1.7.3</option>
+              <option value="Beta 1.3" class="version-option">Beta 1.3</option>
+              <option value="Alpha 1.2.6" class="version-option">Alpha 1.2.6</option>
+              <option value="Indev" class="version-option">Indev</option>
+            </select>
+
+
+            <div class="Play-Button-Container" id="Play-Button-Container">
+                <img src="media/play-button.png" class="Play-Button" draggable="false">
+                <img src="media/play-text.png" class="Play-Text" draggable="false">
+            </div>
+            
+
+            <input type="text" class="username" placeholder="username">
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

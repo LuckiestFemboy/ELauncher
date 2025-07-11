@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+* {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    user-select: none !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #1e1e1e;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    transform: translateY(10px);
+}
+
+.MC-Java-Header {
+    margin-left: 15px;
+    color: white;
+    font-weight: bolder;
+    font-size: 13.5px;
+    transform: translateY(6px);
+}
+
+.Page-Button {
+    color: #cccccc;
+    padding: 15px;
+    font-size: 17px;
+    transition: all 0.1s ease-in-out;
+}
+
+.Page-Button:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.Page-Selected {
+    color: white;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color: #008542;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 14px;
+}
+
+.Page-Selected:hover {
+    cursor: default !important;
+}
+
+.Background-Container {
+    background-image: url("media/background.png");
+    width: 100vw;
+    height: calc((100vh - 80px) - 60px);
+    background-size: cover;
+
+}
+
+.MC-Java-BG {
+    width: 400px;
+    height: fit-content;
+}
+
+.MC-Java-Container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Version-Control {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: row;
+    overflow-y: visible; /* Allow overflow in all directions */
+}
+
+.username {
+    background-color: transparent;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 120px;
+    font-weight: bolder;
+    outline: transparent 0px none !important;
+    border: transparent 0px none !important;
+    transform: translateX(-20px);
+    font-size: 14px;
+}
+
+.versions {
+    background-color: transparent;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #1e1e1e;
+    width: 120px;
+    font-size: 14px;
+    font-weight: bolder;
+    outline: transparent 0px none !important;
+    border: transparent 0px none !important;
+    transform: translateX(20px);
+}
+
+.version-option {
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.Play-Button-Container {
+    position: relative; /* This allows the button to overflow out of the container */
+    z-index: 121398734237948923;
+    width: 240px;
+    height: 60px;
+    transform: translateY(-20px);
+    cursor: pointer;
+    overflow: visible; /* This will allow the button to overflow out of the container */
+}
+
+.Play-Button {
+    width: 240px;
+    height: 60px;
+}
+
+.Play-Text {
+    z-index: 213879264679843278934278476823387643768;
+    position: absolute;
+    width: 55px;
+    height: 20px;
+    top: 50%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+}
+
+.Play-Button-Container:hover .Play-Text {
+    width: 57px;
+    height: 22px;
+}
